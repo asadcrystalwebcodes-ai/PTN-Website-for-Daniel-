@@ -212,7 +212,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               </div>
 
               {/* Coordinates & Status Telemetry */}
-              <div className="pt-8 flex items-center gap-6 text-[11px] font-mono text-slate-400 select-none">
+              <div className="pt-8 flex flex-wrap items-center gap-6 text-[11px] font-mono text-slate-400 select-none">
                 <div>
                   <div className="text-slate-300 font-bold">52.4862° N</div>
                   <div>1.8904° W</div>
@@ -222,6 +222,16 @@ export const HomePage: React.FC<HomePageProps> = ({
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                   <span className="tracking-wider">UK PRECISION NETWORK ACTIVE</span>
                 </div>
+                <div className="h-6 w-[1px] bg-slate-800 hidden sm:block" />
+                <a
+                  href="https://crystalwebcodes.co.uk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hidden sm:flex items-center gap-1.5 text-slate-400 hover:text-[#00A3E0] transition-colors"
+                >
+                  <span className="text-slate-500">SYSTEM ARCHITECTURE:</span>
+                  <span className="text-slate-300 font-semibold underline underline-offset-2 decoration-slate-700 hover:decoration-[#00A3E0]">CRYSTAL WEB CODES</span>
+                </a>
               </div>
             </div>
 

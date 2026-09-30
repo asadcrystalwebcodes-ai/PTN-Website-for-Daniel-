@@ -1,7 +1,7 @@
 import React from 'react';
 import { PTNLogo } from './PTNLogo';
 import { PageView } from '../types';
-import { Linkedin, Globe } from 'lucide-react';
+import { Linkedin, Globe, ExternalLink, Code2 } from 'lucide-react';
 
 interface FooterProps {
   onNavigate: (view: PageView) => void;
@@ -22,7 +22,7 @@ export const Footer: React.FC<FooterProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-8 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center justify-between">
           {/* Left: PTN Logo & Copyright */}
-          <div className="lg:col-span-4 space-y-4">
+          <div className="lg:col-span-4 space-y-3">
             <button
               onClick={() => handleNav('home')}
               className="text-left focus:outline-none"
@@ -120,6 +120,27 @@ export const Footer: React.FC<FooterProps> = ({
               <div className="text-white font-bold">PRECISION IN PEOPLE.</div>
               <div className="text-[#00A3E0]">TALENT IN THE RIGHT PLACE.</div>
             </div>
+          </div>
+        </div>
+
+        {/* Bottom Bar with Crystal Web Codes Watermark Attribution */}
+        <div className="mt-10 pt-6 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-500">
+          <div className="flex items-center gap-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#00A3E0]" />
+            <span>UK ADVANCED RECRUITMENT PLATFORM</span>
+          </div>
+
+          <div className="flex items-center gap-1.5">
+            <span>Designed &amp; Developed by</span>
+            <a
+              href="https://crystalwebcodes.co.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-300 hover:text-[#00A3E0] font-semibold underline underline-offset-4 decoration-[#00A3E0]/40 hover:decoration-[#00A3E0] transition-colors inline-flex items-center gap-1"
+            >
+              <span>Crystal Web Codes</span>
+              <ExternalLink className="w-3 h-3 text-[#00A3E0]" />
+            </a>
           </div>
         </div>
       </div>

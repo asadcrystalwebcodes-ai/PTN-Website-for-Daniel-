@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { PageView, JobVacancy } from './types';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
+import { WatermarkBadge } from './components/WatermarkBadge';
 import { VacancyModal, CandidateRegisterModal, JobDetailModal } from './components/Modals';
 import { HomePage } from './pages/HomePage';
 import { AboutPage } from './pages/AboutPage';
@@ -135,6 +136,9 @@ export default function App() {
         onOpenHiringModal={() => setHiringModalOpen(true)}
         onOpenJobSeekerModal={() => setJobSeekerModalOpen(true)}
       />
+
+      {/* Crystal Web Codes Persistent Watermark Badge */}
+      <WatermarkBadge />
 
       {/* Interactive Modals */}
       <VacancyModal
