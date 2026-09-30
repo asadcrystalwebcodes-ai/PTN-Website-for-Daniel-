@@ -1,0 +1,6 @@
+{
+  "name": "Precision Talent Network (PTN)",
+  "description": "Specialist UK recruitment for Precision Engineering & Manufacturing. Precision in people. Talent in the right place.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
